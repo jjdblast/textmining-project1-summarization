@@ -18,11 +18,13 @@ USE_CUDA = True
 ########################################
 
 ## 训练数据所在位置，注意最后没有文件分隔符'/'
-FILE_PATH = './data/abstractive_input'
+#FILE_PATH = './data/abstractive_input'
+FILE_PATH = '/root/sharefolder/data/text_mining/sumdata/train' # gigawords in docker
 SOS_token = 0
 EOS_token = 1
 ## 句子最大长度，因为经过stage1，因此最大长度可以适当减少
-MAX_LENGTH = 150
+#MAX_LENGTH = 150
+MAX_LENGTH = 100
 
 ########################################
 ## Class To Index The Word
